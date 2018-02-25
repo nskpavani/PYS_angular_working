@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yogaStudioApp">
+
+<head>
+    <title>Aum Yoga Studio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <!-- Bootstrap -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" crossorigin="anonymous">
+    <link href="/bower_components/font-awesome/web-fonts-with-css/css/fontawesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link type="text/css" href="css/styles.css" rel="stylesheet">
+    <!-- endbuild -->
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="navigation">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-left" href="home.html">
+                            <img id="logo1" class="img-responsive" src="images/logo8.png" alt="Aum Yoga Studio">
+                        </a>
+
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="home.html">Home</a></li>
+                            <li class="dropdown">
+                                <a href="aboutus.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Inside the Studio <i class="fa fa-caret-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="aboutus.html">Who We Are</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="ourteam.html">Our Team</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="passes.html">Passes &amp; Promos</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="gallery.html">Gallary</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="testimonial.html">Testimonials</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="classes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Classes <i class="fa fa-caret-down"></i></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li>
+                                        <a href="description.html">Class Description</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="schedule.html">Schedules</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="workshop.html">Workshops</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="corpclasses.html">Corporate classes</a>
+                                    </li>
+                                    <li class="divider"></li>
+                                    <li>
+                                        <a href="privateclasses.html">Private classes</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="active"><a href="news.html">News &amp; Events</a></li>
+                            <li><a href="contactus.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <hr>
+    <div class="pageheader">
+        <h2>News and Events</h2>
+    </div>
+    <div class="container">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a class="link_bc" href="home.html">Home</a></li>
+            <li class="breadcrumb-item active"><a class="link_bc" href="aboutus.html">News and Events</a></li>
+
+        </ol>
+        <div class="row">
+            <div class="col-xs-12">
+                <img class="img-responsive img_top" src="images/news_events.png" align="left" />
+                <h1>News &amp;<span style="font-weight:900"> Events</span></h1>
+                <p class="para"> Here at AUM Yoga Studio, we always have something or the other exciting things happening in the name of Yoga. We update our website as when the event is scheduled so that there is no confusion or timeout to take necessary steps for regestering/ attending or cancellations for the events.</p>
+                <p class="para">So please check this space and come back quite often to know more exciting news about our upcoming events!!</p>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="container" ng-controller="NewsController">
+        <div class="row row-content" ng-repeat="n in news">
+            <div class="col-xs-2">
+                <img src="images/News_May.png" Style="height:80px;width:80px;float:right" class="img-responsive">
+            </div>
+            <div class="col-xs-10">
+                <p style="color:#5989CE;font-size:40px">{{n.date}} Newsletter</p>
+                <p style="font-size:18px">{{n.details}} <a href="#">more</a></p>
+            </div>
+        </div>
+        <hr>
+        <!-- <div class="row">
+            <div class="col-xs-2">
+                <img src="images/News_Apr.png" Style="height:80px;width:80px;float:right" class="img-responsive">
+            </div>
+            <div class="col-xs-10">
+                <p style="color:#5989CE;font-size:40px">April 2017 Newsletter</p>
+                <p style="font-size:18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac placerat lorem. Aenean finibus arcu eget efficitur vehicula. Aliquam iaculis, sapien ut imperdiet aliquet, augue augue placerat est, eu ornare ligula justo a elit. Morbi in justo a eros auctor faucibus a nec elit. <a href="#">more</a></p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-xs-2">
+                <img src="images/News_Mar.png" Style="height:80px;width:80px;float:right" class="img-responsive">
+            </div>
+            <div class="col-xs-10">
+                <p style="color:#5989CE;font-size:40px">March 2017 Newsletter</p>
+                <p style="font-size:18px">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ac placerat lorem. Aenean finibus arcu eget efficitur vehicula. Aliquam iaculis, sapien ut imperdiet aliquet, augue augue placerat est, eu ornare ligula justo a elit. Morbi in justo a eros auctor faucibus a nec elit. <a href="#">more</a></p>
+            </div>
+        </div>
+        <hr> -->
+        <ul class="pager">
+            <li class="previous disabled"><a href="#">&larr; Previous</a></li>
+            <li class="next"><a href="#">Next &rarr;</a></li>
+        </ul>
+    </div>
+    <p style="padding:10px;"> </p>
+    <hr>
+
+    <p style="padding:20px;"> </p>
+    <footer>
+        <div class="container-fluid">
+            <div>
+                <div class="col-xs-6 col-sm-3">
+                    <h5><b>Links</b></h5>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Classes</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-6 col-sm-5">
+                    <h5>Our Address</h5>
+                    <address style="color:#5989CE">
+                        121, downtown<br>
+                        City,Alberta<br>
+                        Canada<br>
+                        Tel.: +852 1234 5678<br>
+                        Fax: +852 8765 4321<br>
+                        Email: <a href="mailto:contactus@aumyogastudio.com">contactus@aumyogastudio.com</a>
+                    </address>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <div style="padding: 40px 10px;">
+                        <div class="nav navbar-nav" style="padding: 40px 10px;">
+                            <a class="btn btn-social-icon btn-googleplus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <p style="padding:10px;"></p>
+                    <p align=center>© Copyright 2016 Aum Yoga Studio</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.navbar .dropdown').hover(function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+            }, function() {
+                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
+            });
+        });
+    </script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+installed packages after stable/working Project_YogaStudio_public folder::
+
+
+Bower
+angular
+!!! grunt and gulp not working and were left out
+->home.html done with angular and it is working
+->news.html done with angular and it is working
+->ourteam.html done with angular and it's working
+->Gallary.html done with angular and it is working
+->testimonial.html done with angular and it is working
