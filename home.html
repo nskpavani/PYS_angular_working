@@ -1,309 +1,123 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="yogaStudioApp">
+<div class="container bgimg1">
+    <p style="padding:10px;"> </p>
+    <div class="well well-lg">
+        <h3 class="quote">With Yoga not only should body become flexible, Your mind and emotions, and above all your conciousness should become flexible.</h3>
+        <footer class="text-right"> -- Sri Sadhguru Jaggi Vasudev </footer>
+    </div>
+    <p style="padding:10px;"> </p>
+    <div class="row row-content">
+        <div class="col-xs-4 float">
+            <div class="table_cell">
+                <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/classes_pic1.png" />
+                <h3 align="center">Classes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <p style="padding:10px;"> </p>
+        </div>
+        <div class="col-xs-4 float">
+            <div class="table_cell">
+                <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/schedule_pic.png" />
+                <h3 align="center">Schedules</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <p style="padding:10px;"> </p>
+        </div>
+        <div class="col-xs-4 float">
+            <div class="table_cell">
+                <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/workshop_pic.png" />
+                <h3 align="center">Workshop</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
+            </div>
+            <p style="padding:10px;"> </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row row-content">
+        <h2>Inside the Studio...</h2>
+        <div class="col-xs-3">
+            <h4 class="h4home">New to Yoga??</h4>
+            <p>We can help with any questions you need to know answers...</p>
 
-<head>
-    <title>Aum Yoga Studio</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
-    <!-- Latest compiled and minified CSS -->
-    <!-- Bootstrap -->
-
-    <!-- build:css styles/main.css -->
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" crossorigin="anonymous">
-    <link href="/bower_components/font-awesome/web-fonts-with-css/css/fontawesome.min.css" rel="stylesheet" crossorigin="anonymous">
-    <link type="text/css" href="css/styles.css" rel="stylesheet">
-    <!-- endbuild -->
-</head>
-
-<body>
-    <div class="container-fluid bgimg2" style="height:auto;min-height: 100%;">
-        <div class="navigation">
-            <nav class="navbar navbar-default" role="navigation">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    <a class="navbar-brand navbar-left" href="home.html">
-                        <img class="img-responsive" src="images/logo_final.png" alt="Aum Yoga Studio">
+            <h4 class="h4home">Who we are</h4>
+            <p>We can help with any questions you need to know answers...</p>
+            <h4 class="h4home">Our Team</h4>
+            <p>We can help with any questions you need to know answers...</p>
+            <h4 class="h4home">Classes</h4>
+            <p>We can help with any questions you need to know answers...</p>
+            <h4 class="h4home">Workshops</h4>
+            <p>We can help with any questions you need to know answers...</p>
+        </div>
+        <div class="col-xs-3">
+            <h4 class="h4home">Schedules</h4>
+            <p>We can help with any questions you need to know answers...</p>
+            <h4 class="h4home">Passes &amp; Rates</h4>
+            <p>We can help with any questions you need to know answers...</p>
+            <h4 class="h4home">Hours of Operation</h4>
+            <p>We can help with any questions you need to know answers...</p>
+            <h4 class="h4home">Gallery</h4>
+            <p>We can help with any questions you need to know answers...</p>
+            <h4 class="h4home">Manage my account</h4>
+            <p>We can help with any questions you need to know answers...</p>
+        </div>
+        <div class="col-xs-4 col-xs-push-1">
+            `
+            <h4 class="h4home"> And More..</h4>
+            <div class="row gallery">
+                <h3 class="h3home"> Get Inside..</h3>
+                <div class="col-xs-4 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
                     </a>
-
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    </a>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li class="active"><a href="home.html">Home</a></li>
-                        <li class="dropdown">
-                            <a href="insidestudio.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Inside the Studio <i class="fal fa-angle-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a href="aboutus.html">Who We Are</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="ourteam.html">Our Team</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="passes.html">Passes &amp; Promos</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="gallery.html">Gallary</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="testimonial.html">Testimonials</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="classes.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Classes <i class="fa fa-caret-down"></i></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li>
-                                    <a href="description.html">Class Description</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="schedule.html">Schedules</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="workshop.html">Workshops</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="corpclasses.html">Corporate classes</a>
-                                </li>
-                                <li class="divider"></li>
-                                <li>
-                                    <a href="privateclasses.html">Private classes</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li><a href="news.html">News &amp; Events</a></li>
-                        <li><a href="contactus.html">Contact Us</a></li>
-                    </ul>
+                <div class="col-xs-4 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    </a>
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    </a>
                 </div>
-            </nav>
-        </div>
-        <p style="padding:150px;"> </p>
-        <p class="retroshadow" align="center"> Welcome... <br> To city's longest running yoga studio!!!</p>
-    </div>
-    <div class="container bgimg1">
-        <p style="padding:10px;"> </p>
-        <div class="well well-lg">
-            <h3 class="quote">With Yoga not only should body become flexible, Your mind and emotions, and above all your conciousness should become flexible.</h3>
-            <footer class="text-right"> -- Sri Sadhguru Jaggi Vasudev </footer>
-        </div>
-        <p style="padding:10px;"> </p>
-        <div class="row row-content">
-            <div class="col-xs-4 float">
-                <div class="table_cell">
-                    <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/classes_pic1.png" />
-                    <h3 align="center">Classes</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-                <p style="padding:10px;"> </p>
-            </div>
-            <div class="col-xs-4 float">
-                <div class="table_cell">
-                    <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/schedule_pic.png" />
-                    <h3 align="center">Schedules</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-                <p style="padding:10px;"> </p>
-            </div>
-            <div class="col-xs-4 float">
-                <div class="table_cell">
-                    <img class="image_class img-responsive img-circle" style="height:100px;width:100px" src="images/workshop_pic.png" />
-                    <h3 align="center">Workshop</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
-                </div>
-                <p style="padding:10px;"> </p>
-            </div>
-        </div>
-        <hr>
-        <div class="row row-content">
-            <h2>Inside the Studio...</h2>
-            <div class="col-xs-3">
-                <h4 class="h4home">New to Yoga??</h4>
-                <p>We can help with any questions you need to know answers...</p>
-
-                <h4 class="h4home">Who we are</h4>
-                <p>We can help with any questions you need to know answers...</p>
-                <h4 class="h4home">Our Team</h4>
-                <p>We can help with any questions you need to know answers...</p>
-                <h4 class="h4home">Classes</h4>
-                <p>We can help with any questions you need to know answers...</p>
-                <h4 class="h4home">Workshops</h4>
-                <p>We can help with any questions you need to know answers...</p>
-            </div>
-            <div class="col-xs-3">
-                <h4 class="h4home">Schedules</h4>
-                <p>We can help with any questions you need to know answers...</p>
-                <h4 class="h4home">Passes &amp; Rates</h4>
-                <p>We can help with any questions you need to know answers...</p>
-                <h4 class="h4home">Hours of Operation</h4>
-                <p>We can help with any questions you need to know answers...</p>
-                <h4 class="h4home">Gallery</h4>
-                <p>We can help with any questions you need to know answers...</p>
-                <h4 class="h4home">Manage my account</h4>
-                <p>We can help with any questions you need to know answers...</p>
-            </div>
-            <div class="col-xs-4 col-xs-push-1">
-                `
-                <h4 class="h4home"> And More..</h4>
-                <div class="row gallery">
-                    <h3 class="h3home"> Get Inside..</h3>
-                    <div class="col-xs-4 thumb">
-                        <a class="thumbnail" href="#">
-                            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        </a>
-                        <a class="thumbnail" href="#">
-                            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        </a>
-                    </div>
-                    <div class="col-xs-4 thumb">
-                        <a class="thumbnail" href="#">
-                            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        </a>
-                        <a class="thumbnail" href="#">
-                            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        </a>
-                    </div>
-                    <div class="col-xs-4 thumb">
-                        <a class="thumbnail" href="#">
-                            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        </a>
-                        <a class="thumbnail" href="#">
-                            <img class="img-responsive" src="http://placehold.it/400x300" alt="">
-                        </a>
-                    </div>
+                <div class="col-xs-4 thumb">
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    </a>
+                    <a class="thumbnail" href="#">
+                        <img class="img-responsive" src="http://placehold.it/400x300" alt="">
+                    </a>
                 </div>
             </div>
-        </div>
-        <hr>
-        <div class="row row-content">
-            <h2>Promotions</h2>
-            <div class="col-xs-3">
-                <img class="img-responsive" src="images/promo.png" alt="promo">
-            </div>
-            <div class="col-xs-9">
-                <h1 style="font-variant: small-caps;color:#5989CE;">Limited time offer!!!</h1>
-                <h3 style="font-variant: small-caps;;color:#5989CE;">20% off on all memberships..HURRY...</h3>
-                <p> We offer promotions and discounts on regular basis. To know more please click the button below</p>
-                <button type="button" class="btn btn-info btn-lg" style="float:right;width:auto;">More Details..</button>
-            </div>
-        </div>
-
-        <hr />
-
-        <div class="row row-content" ng-controller="NewsController">
-            <h2>Latest News and events...</h2>
-            <div class="col-xs-3 float" ng-repeat="n in news">
-                <div class="table_cell cell2">
-                    <h3 align="left"><img src="images/newsletter-icon.png">{{n.date}} Newsletter</h3>
-                    <p>
-                        {{n.details}}<a href="#">more</a>
-                    </p>
-                </div>
-                <p style="padding:10px;"> </p>
-            </div>
-            <!-- <div class="col-xs-3 float">
-                <div class="table_cell cell2">
-                    <h3 align="left"><img src="images/newsletter-icon.png">December 2016 Newsletter</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis sollicitudin massa. Praesent ullamcorper velit vitae arcu eleifend, eget blandit risus lacinia. Morbi ac elit ipsum. Vestibulum auctor dolor et pulvinar interdum. Sed facilisis facilisis velit quis pulvinar. Vivamus volutpat, tellus et consectetur euismod, nisl diam ultrices enim, in porta magna leo sit amet nunc.
-                        <a href="#">more</a>
-                    </p>
-                </div>
-                <p style="padding:10px;"> </p>
-            </div>
-            <div class="col-xs-3 float">
-                <div class="table_cell cell2">
-                    <h3 align="left"><img src="images/newsletter-icon.png">November 2016 Newsletter</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis sollicitudin massa. Praesent ullamcorper velit vitae arcu eleifend, eget blandit risus lacinia. Morbi ac elit ipsum. Vestibulum auctor dolor et pulvinar interdum. Sed facilisis facilisis velit quis pulvinar. Vivamus volutpat, tellus et consectetur euismod, nisl diam ultrices enim, in porta magna leo sit amet nunc.
-                        <a href="#">more</a>
-                    </p>
-                </div>
-                <p style="padding:10px;"> </p>
-            </div>
-            <div class="col-xs-3 float">
-                <div class="table_cell cell2">
-
-                    <h3 align="left"><img src="images/newsletter-icon.png">October 2016 Newsletter</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis sollicitudin massa. Praesent ullamcorper velit vitae arcu eleifend, eget blandit risus lacinia. Morbi ac elit ipsum. Vestibulum auctor dolor et pulvinar interdum. Sed facilisis facilisis velit quis pulvinar. Vivamus volutpat, tellus et consectetur euismod, nisl diam ultrices enim, in porta magna leo sit amet nunc.
-                        <a href="#">more</a>
-                    </p>
-                </div>
-                <p style="padding:10px;"> </p>
-            </div> -->
         </div>
     </div>
-    <footer>
-        <div class="container-fluid">
-            <div>
-                <div class="col-xs-6 col-sm-3">
-                    <h5><b>Links</b></h5>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Classes</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-xs-6 col-sm-5">
-                    <h5>Our Address</h5>
-                    <address style="color:#5989CE">
-                        121, downtown<br>
-                        City,Alberta<br>
-                        Canada<br>
-                        Tel.: +852 1234 5678<br>
-                        Fax: +852 8765 4321<br>
-                        Email: <a href="mailto:contactus@aumyogastudio.com">contactus@aumyogastudio.com</a>
-                    </address>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div style="padding: 40px 10px;">
-                        <div class="nav navbar-nav" style="padding: 40px 10px;">
-                            <a class="btn btn-social-icon btn-googleplus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
-                            <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
-                            <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
-                            <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xs-12">
-                    <p style="padding:10px;"></p>
-                    <p align=center>© Copyright 2018 Aum Yoga Studio</p>
-                </div>
+    <hr>
+    <div class="row row-content">
+        <h2>Promotions</h2>
+        <div class="col-xs-3">
+            <img class="img-responsive" src="images/promo.png" alt="promo">
+        </div>
+        <div class="col-xs-9">
+            <h1 style="font-variant: small-caps;color:#5989CE;">Limited time offer!!!</h1>
+            <h3 style="font-variant: small-caps;;color:#5989CE;">20% off on all memberships..HURRY...</h3>
+            <p> We offer promotions and discounts on regular basis. To know more please click the button below</p>
+            <button type="button" class="btn btn-info btn-lg" style="float:right;width:auto;">More Details..</button>
+        </div>
+    </div>
+
+    <hr />
+
+    <div class="row row-content" ng-controller="NewsController">
+        <h2>Latest News and events...</h2>
+        <div class="col-xs-3 float" ng-repeat="n in news">
+            <div class="table_cell cell2">
+                <h3 align="left"><img src="images/newsletter-icon.png">{{n.date}} Newsletter</h3>
+                <p>
+                    {{n.details}}<a href="#">more</a>
+                </p>
             </div>
+            <p style="padding:10px;"> </p>
         </div>
 
-    </footer>
-    <!-- build:js scripts/main.js -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-    <script src="/bower_components/angular/angular.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.navbar .dropdown').hover(function() {
-                $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
-            }, function() {
-                $(this).find('.dropdown-menu').first().stop(true, true).slideUp(105)
-            });
-        });
-    </script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers.js"></script>
-    <script src="js/services.js"></script>
-    <!-- endbuild -->
-</body>
-
-</html>
+    </div>
+</div>

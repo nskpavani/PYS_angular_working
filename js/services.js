@@ -219,4 +219,16 @@ angular.module('yogaStudioApp')
         this.getOneTestimony = function (index) {
             return testimonials[index];
         }
+    })
+    .service('indexFactory', function ($location) {
+        // var lpath === ;
+        this.getLPath = function () {
+            //alert(lpath);
+            var v = lpath.search("home");
+            // alert(v);
+            return lpath === $location.path();
+
+        }
+
+
     });

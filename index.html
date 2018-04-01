@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="yogaStudioApp">
+
+<head>
+    <title>Aum Yoga Studio</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap-theme.min.css" crossorigin="anonymous">
+    <link href="/bower_components/font-awesome/web-fonts-with-css/css/fontawesome.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link type="text/css" href="css/styles.css" rel="stylesheet">
+</head>
+
+<body ng-controller="navController">
+    <div ng-if="isHome">
+        <div ng-include="'header1.html'"></div>
+    </div>
+    <div ng-if="!isHome">
+        <div ng-include="'header2.html'"></div>
+    </div>
+    <ng-view></ng-view>
+
+    <div ng-include="'footer.html'"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="/bower_components/angular/angular.min.js"></script>
+    <script src="/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+</body>
+
+</html>

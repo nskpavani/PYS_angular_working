@@ -15,3 +15,17 @@ angular.module('yogaStudioApp')
     .controller('TestimonyController', ['$scope', 'testimonyFactory', function ($scope, testimonyFactory) {
         $scope.testimonials = testimonyFactory.getTestimony();
                              }])
+    .controller('IndexController', ['$scope', '$location', 'indexFactory', function ($scope, $location, indexFactory) {
+    }])
+
+    .controller('navController', ['$scope', '$location', function ($scope, $location) {
+        $scope.isHome = function (isH) {
+            return isH === $location.path().search("home");
+        }
+
+        $scope.isActive = function (viewLocation) {
+            return viewLocation === $location.path();
+        };
+
+    }])
+
